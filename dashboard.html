@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Keseharianku</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="dashboard-header">
+            <div class="header-content">
+                <h1>Dashboard Keseharianku</h1>
+                <div class="user-info">
+                    <span id="userWelcome">Selamat datang!</span>
+                    <button class="btn btn-secondary" onclick="logout()">Keluar</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard-main">
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h3>📿 Jadwal Sholat Hari Ini</h3>
+                    <div class="schedule-list">
+                        <div class="schedule-item">
+                            <span class="time">05:00</span>
+                            <span class="activity">Subuh</span>
+                            <span class="status completed">✓</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="time">12:15</span>
+                            <span class="activity">Dzuhur</span>
+                            <span class="status pending">○</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="time">15:30</span>
+                            <span class="activity">Ashar</span>
+                            <span class="status pending">○</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="time">18:45</span>
+                            <span class="activity">Maghrib</span>
+                            <span class="status pending">○</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="time">20:00</span>
+                            <span class="activity">Isya</span>
+                            <span class="status pending">○</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>🛁 Rutinitas Harian</h3>
+                    <div class="schedule-list">
+                        <div class="schedule-item">
+                            <span class="time">06:00</span>
+                            <span class="activity">Mandi Pagi</span>
+                            <span class="status completed">✓</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="time">07:00</span>
+                            <span class="activity">Sarapan</span>
+                            <span class="status completed">✓</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="time">13:00</span>
+                            <span class="activity">Mandi Siang</span>
+                            <span class="status pending">○</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="time">17:00</span>
+                            <span class="activity">Mandi Sore</span>
+                            <span class="status pending">○</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="time">22:00</span>
+                            <span class="activity">Tidur</span>
+                            <span class="status pending">○</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>📊 Statistik Hari Ini</h3>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">1</span>
+                            <span class="stat-label">Sholat Selesai</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Aktivitas Selesai</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">30%</span>
+                            <span class="stat-label">Progress Hari Ini</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>⏰ Pengingat Berikutnya</h3>
+                    <div class="next-reminder">
+                        <div class="reminder-time">12:15</div>
+                        <div class="reminder-activity">Sholat Dzuhur</div>
+                        <div class="reminder-countdown" id="countdown">Dalam 2 jam 30 menit</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
