@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk - Keseharianku</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h2>Masuk ke Akun Anda</h2>
+                    <p>Selamat datang kembali!</p>
+                </div>
+
+                <form id="loginForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                        <span class="error-message" id="passwordError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="rememberMe" name="rememberMe">
+                            <span class="checkmark"></span>
+                            Ingat saya
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-full">Masuk</button>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="error-message" id="loginError"></div>
+                        <div class="success-message" id="loginSuccess"></div>
+                    </div>
+                </form>
+
+                <div class="auth-footer">
+                    <p>Belum punya akun? <a href="register.html">Daftar disini</a></p>
+                    <p><a href="index.html">Kembali ke beranda</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
